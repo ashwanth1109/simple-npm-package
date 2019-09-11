@@ -1,0 +1,26 @@
+{
+  "name": "simple-npm-package",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "https://github.com/ashwanth1109/repo-name",
+  "main": "lib/index.js",
+  "author": "Ashwanth A R <ashwanth1109@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "prepare": "yarn build"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0"
+  }
+}
